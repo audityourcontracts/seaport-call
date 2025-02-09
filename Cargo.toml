@@ -1,0 +1,25 @@
+[package]
+name = "seaport-call"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy = { version = "0.11.0", features = [
+    "full",
+    "node-bindings",
+    "rpc-types-debug",
+    "rpc-types-trace",
+    "json-rpc",
+    "rpc-client",
+    "signer-aws",
+    "signer-keystore",
+    "signer-ledger",
+    "signer-mnemonic",
+    "signer-trezor",
+    "signer-yubihsm",
+] }
+# alloy additional
+alloy-eips = "0.11.0"
+
+url = "2.5.2"
+tokio = "1"
